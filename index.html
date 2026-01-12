@@ -39,10 +39,11 @@
 </div>
 
     <!-- セクション2 -->
-<section class="py-24">
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+<section class="py-24 space-y-16">
 
-    <!-- Discordカード -->
+  <!-- 1行目：カード 左 / 画像 右 -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <!-- カード -->
     <div class="flex flex-col bg-white border border-gray-200 shadow-2xl rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70 p-6 md:p-10">
       <h3 class="text-lg font-bold text-gray-800 dark:text-white">Discord</h3>
       <p class="mt-2 text-gray-500 dark:text-neutral-400">
@@ -56,8 +57,17 @@
       </a>
     </div>
 
-    <!-- Scratchカード -->
-    <div class="flex flex-col bg-white border border-gray-200 shadow-2xl rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70 p-6 md:p-10">
+    <!-- 画像 -->
+    <img src="https://picsum.photos/1200/600" class="rounded-2xl shadow-xl w-full aspect-[2/1] object-cover blur-md">
+  </div>
+
+  <!-- 2行目：画像 左 / カード 右 -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <!-- 画像 -->
+    <img src="https://picsum.photos/1200/600" class="rounded-2xl shadow-xl w-full aspect-[2/1] object-cover blur-sm md:order-1">
+
+    <!-- カード -->
+    <div class="flex flex-col bg-white border border-gray-200 shadow-2xl rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70 p-6 md:p-10 md:order-2">
       <h3 class="text-lg font-bold text-gray-800 dark:text-white">Scratch</h3>
       <p class="mt-2 text-gray-500 dark:text-neutral-400">
         これが私のScratchのアカウントです!
@@ -69,15 +79,10 @@
         </svg>
       </a>
     </div>
-
-    <!-- 画像 -->
-    <div class="space-y-6">
-      <img src="https://picsum.photos/1200/600" class="rounded-2xl shadow-xl w-full aspect-[2/1] object-cover blur-md">
-      <img src="https://picsum.photos/1200/600" class="rounded-2xl shadow-xl w-full aspect-[2/1] object-cover blur-sm">
-    </div>
-
   </div>
+
 </section>
+
 
 
   </div>
